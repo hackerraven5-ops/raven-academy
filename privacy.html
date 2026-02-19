@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية | RAVEN Academy</title>
+    <meta name="copyright" content="© 2026 RAVEN Academy - hacker_.raven">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Navbar مصغر -->
+    <nav class="navbar navbar-compact">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-arrow-right"></i> RAVEN
+            </a>
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>/</span>
+                <span>سياسة الخصوصية</span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- محتوى السياسة -->
+    <div class="container" style="padding: 4rem 2rem; max-width: 900px; margin: 0 auto;">
+        <h1 style="color: var(--accent-primary); margin-bottom: 0.5rem;">🔒 سياسة الخصوصية</h1>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">آخر تحديث: فبراير 2026</p>
+        
+        <div style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">1. مقدمة</h2>
+            <p>مرحباً بك في RAVEN Academy. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية.</p>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">2. المعلومات التي نجمعها</h2>
+            <p>لا نجمع أي بيانات شخصية إلا عبر نموذج التواصل الاختياري، ويشمل ذلك:</p>
+            <ul style="margin-right: 1.5rem; color: var(--text-secondary);">
+                <li>الاسم (اختياري)</li>
+                <li>البريد الإلكتروني (للرد على استفسارك)</li>
+                <li>الرسالة التي ترسلها</li>
+            </ul>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">3. كيفية استخدام المعلومات</h2>
+            <p>تُستخدم البيانات فقط للرد على استفساراتك وتحسين خدماتنا. لن نبيع أو نشارك بياناتك مع أي طرف ثالث.</p>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">4. ملفات تعريف الارتباط (Cookies)</h2>
+            <p>نستخدم localStorage فقط لحفظ تقدمك التعليمي محلياً على جهازك. هذه البيانات لا تغادر جهازك أبداً.</p>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">5. الأمان</h2>
+            <p>نستخدم HTTPS لتشفير جميع الاتصالات بينك وبين موقعنا.</p>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">6. حقوقك</h2>
+            <p>لك الحق في:</p>
+            <ul style="margin-right: 1.5rem; color: var(--text-secondary);">
+                <li>معرفة البيانات التي لدينا عنك</li>
+                <li>طلب حذف بياناتك</li>
+                <li>سحب موافقتك في أي وقت</li>
+            </ul>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">7. التواصل</h2>
+            <p>لأي سؤال أو طلب متعلق بالخصوصية:</p>
+            <p style="color: var(--accent-primary);">📧 hackerraven5@gmail.com</p>
+            
+            <h2 style="color: var(--accent-secondary); margin-top: 1.5rem;">8. تنويه أخلاقي</h2>
+            <p style="color: var(--accent-warning);">⚠️ جميع محتويات RAVEN Academy مخصصة للأغراض التعليمية والاختراق الأخلاقي فقط. أي استخدام غير قانوني هو مسؤولية المستخدم الشخصية.</p>
+            
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+            <p style="color: var(--text-muted);">
+                © 2026 <strong>RAVEN Academy</strong>. جميع الحقوق محفوظة لـ 
+                <a href="https://instagram.com/hacker_.raven" target="_blank">hacker_.raven</a>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Back to Top -->
+    <button id="backToTop" title="العودة للأعلى" style="position: fixed; bottom: 2rem; left: 2rem; width: 50px; height: 50px; border-radius: 50%; background: var(--accent-primary); color: white; border: none; cursor: pointer; display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

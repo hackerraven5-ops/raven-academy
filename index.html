@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAVEN | منصة تعلم الأمن السيبراني والاختراق الأخلاقي</title>
+    <meta name="description" content="منصة RAVEN التعليمية لتعلم الأمن السيبراني من الصفر حتى الاحتراف">
+    <meta name="author" content="hacker_.raven">
+    <meta name="copyright" content="© 2026 RAVEN Academy - جميع الحقوق محفوظة لـ hacker_.raven">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- 🔐 Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="raven-logo animate-pulse">
+                <i class="fas fa-crow fa-3x"></i>
+            </div>
+            <p>جاري تحميل منصة RAVEN...</p>
+        </div>
+    </div>
+
+    <!-- 🎯 Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-crow"></i>
+                <span>RAVEN</span>
+                <small class="badge">Academy</small>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#levels"><i class="fas fa-layer-group"></i> مستويات التعلم</a></li>
+                <li><a href="#roadmap"><i class="fas fa-map"></i> الخرائط التعليمية</a></li>
+                <li><a href="#resources"><i class="fas fa-book"></i> المصادر</a></li>
+                <li><a href="#community"><i class="fas fa-users"></i> المجتمع</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" title="تبديل الوضع">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="langToggle" class="lang-btn" title="تغيير اللغة">
+                    <i class="fas fa-globe"></i> AR
+                </button>
+                <a href="#start" class="btn-primary">ابدأ رحلتك <i class="fas fa-arrow-left"></i></a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 🚀 Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="matrix-rain"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text fade-in-up">
+                <h1 class="glitch" data-text="RAVEN Academy">RAVEN Academy</h1>
+                <p class="subtitle">منصتك الشاملة لتعلم <span class="highlight">الأمن السيبراني</span> و<span class="highlight">الاختراق الأخلاقي</span></p>
+                <p class="description">
+                    من الصفر حتى الاحتراف • مسارات مخصصة • مصادر موثوقة • تعلم عملي
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number" data-count="500">0</span>
+                        <span class="label">مصدر تعليمي</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="3">0</span>
+                        <span class="label">مسارات تعلم</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="100">0</span>
+                        <span class="label">% مجاني</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#levels" class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> ابدأ التعلم الآن
+                    </a>
+                    <a href="#roadmap" class="btn-secondary btn-large">
+                        <i class="fas fa-map-marked-alt"></i> استعرض الخرائط
+                    </a>
+                </div>
+                
+                <div class="social-links">
+                    <span>تابعنا:</span>
+                    <a href="https://instagram.com/hacker_.raven" target="_blank" class="social-btn instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@hacker_.raven" target="_blank" class="social-btn tiktok" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in-up delay-200">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="title">raven@academy:~$</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre class="code-typing">
+<span class="cmd">$</span> <span class="command">whoami</span>
+<span class="output">> ethical_hacker_in_training</span>
+
+<span class="cmd">$</span> <span class="command">start_learning --level=beginner</span>
+<span class="output">> ✓ Loading beginner roadmap...</span>
+<span class="output">> ✓ 25 modules loaded</span>
+<span class="output">> ✓ 150+ YouTube resources</span>
+
+<span class="cmd">$</span> <span class="command">echo "Ready to hack ethically!"</span>
+<span class="output">> Ready to hack ethically! 🛡️</span>
+<span class="cursor">█</span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#levels">
+                <i class="fas fa-chevron-down bounce"></i>
+                <span>اكتشف المزيد</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 📊 Levels Section -->
+    <section id="levels" class="levels-section">
+        <div class="section-header">
+            <h2 class="section-title">🎯 مسارات التعلم</h2>
+            <p class="section-subtitle">اختر مستواك وابدأ رحلتك في عالم الأمن السيبراني</p>
+        </div>
+        
+        <div class="levels-grid">
+            <!-- Beginner Level -->
+            <div class="level-card beginner" data-level="beginner">
+                <div class="level-header">
+                    <div class="level-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>مبتدئ</h3>
+                    <span class="level-badge">Start Here</span>
+                </div>
+                <div class="level-body">
+                    <p class="level-desc">
+                        للمبتدئين تماماً في المجال. ستتعلم الأساسيات من الصفر بدون أي خبرة مسبقة.
+                    </p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> أساسيات الشبكات والإنترنت</li>
+                        <li><i class="fas fa-check"></i> مقدمة في لينكس والأوامر</li>
+                        <li><i class="fas fa-check"></i> مفاهيم الأمن السيبراني</li>
+                        <li><i class="fas fa-check"></i> أدوات المبتدئين الأساسية</li>
+                        <li><i class="fas fa-check"></i> مشاريع تطبيقية بسيطة</li>
+                    </ul>
+                    <div class="level-progress">
+                        <div class="progress-info">
+                            <span>25 وحدة تعليمية</span>
+                            <span>~40 ساعة</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-footer">
+                    <a href="pages/beginner.html" class="btn-level">
+                        ابدأ المسار <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Intermediate Level -->
+            <div class="level-card intermediate" data-level="intermediate">
+                <div class="level-header">
+                    <div class="level-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>متوسط</h3>
+                    <span class="level-badge">Level Up</span>
+                </div>
+                <div class="level-body">
+                    <p class="level-desc">
+                        لمن أكمل الأساسيات ويرغب في التعمق في التقنيات والأدوات المتقدمة.
+                    </p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> اختبار الاختراق العملي</li>
+                        <li><i class="fas fa-check"></i> تحليل الثغرات الأمنية</li>
+                        <li><i class="fas fa-check"></i> أدوات Kali Linux المتقدمة</li>
+                        <li><i class="fas fa-check"></i> البرمجة للأمن السيبراني</li>
+                        <li><i class="fas fa-check"></i> مختبرات افتراضية تفاعلية</li>
+                    </ul>
+                    <div class="level-progress">
+                        <div class="progress-info">
+                            <span>35 وحدة تعليمية</span>
+                            <span>~65 ساعة</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-footer">
+                    <a href="pages/intermediate.html" class="btn-level">
+                        ابدأ المسار <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Professional Level -->
+            <div class="level-card professional" data-level="professional">
+                <div class="level-header">
+                    <div class="level-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>محترف</h3>
+                    <span class="level-badge">Expert</span>
+                </div>
+                <div class="level-body">
+                    <p class="level-desc">
+                        للمحترفين الذين يسعون للإتقان والتميز في مجال الأمن السيبراني والاختراق الأخلاقي.
+                    </p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> هندسة الاختراق المتقدم</li>
+                        <li><i class="fas fa-check"></i> تحليل البرمجيات الخبيثة</li>
+                        <li><i class="fas fa-check"></i> الأمن الهجومي والدفاعي</li>
+                        <li><i class="fas fa-check"></i> إعداد تقارير احترافية</li>
+                        <li><i class="fas fa-check"></i> شهادات معتمدة ومشاريع حقيقية</li>
+                    </ul>
+                    <div class="level-progress">
+                        <div class="progress-info">
+                            <span>40 وحدة تعليمية</span>
+                            <span>~80+ ساعة</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-footer">
+                    <a href="pages/professional.html" class="btn-level">
+                        ابدأ المسار <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🗺️ Interactive Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="section-header">
+            <h2 class="section-title">🗺️ الخرائط التعليمية التفاعلية</h2>
+            <p class="section-subtitle">كل خطوة في رحلتك التعليمية موثقة بمصادر يوتيوب موثوقة</p>
+        </div>
+        
+        <div class="roadmap-container">
+            <!-- Level Selector Tabs -->
+            <div class="roadmap-tabs">
+                <button class="tab-btn active" data-target="beginner-roadmap">
+                    <i class="fas fa-seedling"></i> مبتدئ
+                </button>
+                <button class="tab-btn" data-target="intermediate-roadmap">
+                    <i class="fas fa-fire"></i> متوسط
+                </button>
+                <button class="tab-btn" data-target="professional-roadmap">
+                    <i class="fas fa-crown"></i> محترف
+                </button>
+            </div>
+            
+            <!-- Beginner Roadmap -->
+            <div id="beginner-roadmap" class="roadmap-content active">
+                <div class="roadmap-header">
+                    <h3>🚀 خريطة المبتدئ: من الصفر إلى الأساسيات</h3>
+                    <p>25 خطوة تعليمية • كل خطوة تحتوي على مصدر يوتيوب موثوق</p>
+                </div>
+                
+                <div class="roadmap-steps">
+                    <!-- Step 1 -->
+                    <div class="roadmap-step" data-step="1">
+                        <div class="step-marker completed">
+                            <span class="step-number">1</span>
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>📚 مقدمة في الأمن السيبراني</h4>
+                            <p>فهم ماهية الأمن السيبراني، أهميته، والمجالات المتاحة فيه</p>
+                            <div class="step-resources">
+                                <a href="https://youtube.com/watch?v=example1" target="_blank" class="resource-link youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>مقدمة شاملة - قناة Ethical Hack</span>
+                                    <span class="duration">15:30</span>
+                                </a>
+                            </div>
+                            <button class="step-toggle">عرض التفاصيل <i class="fas fa-chevron-down"></i></button>
+                            <div class="step-details">
+                                <ul>
+                                    <li>✓ ما هو الأمن السيبراني؟</li>
+                                    <li>✓ الفرق بين الهاكر الأبيض والأسود</li>
+                                    <li>✓ المسارات الوظيفية في المجال</li>
+                                    <li>✓ المهارات المطلوبة للبدء</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="roadmap-step" data-step="2">
+                        <div class="step-marker">
+                            <span class="step-number">2</span>
+                        </div>
+                        <div class="step-content">
+                            <h4>🌐 أساسيات الشبكات والإنترنت</h4>
+                            <p>فهم كيفية عمل الشبكات، بروتوكولات الاتصال، وعناوين IP</p>
+                            <div class="step-resources">
+                                <a href="https://youtube.com/watch?v=example2" target="_blank" class="resource-link youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>شبكات للمبتدئين - شبكة محمد حسين</span>
+                                    <span class="duration">28:45</span>
+                                </a>
+                            </div>
+                            <button class="step-toggle">عرض التفاصيل <i class="fas fa-chevron-down"></i></button>
+                            <div class="step-details">
+                                <ul>
+                                    <li>✓ نموذج OSI و TCP/IP</li>
+                                    <li>✓ عناوين IP و Subnetting</li>
+                                    <li>✓ بروتوكولات HTTP, DNS, DHCP</li>
+                                    <li>✓ أدوات تحليل الشبكة الأساسية</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="roadmap-step" data-step="3">
+                        <div class="step-marker">
+                            <span class="step-number">3</span>
+                        </div>
+                        <div class="step-content">
+                            <h4>🐧 مقدمة في نظام لينكس</h4>
+                            <p>تعلم أساسيات نظام لينكس والأوامر الأساسية في الطرفية</p>
+                            <div class="step-resources">
+                                <a href="https://youtube.com/watch?v=example3" target="_blank" class="resource-link youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>لينكس من الصفر - قناة Codezilla</span>
+                                    <span class="duration">35:20</span>
+                                </a>
+                            </div>
+                            <button class="step-toggle">عرض التفاصيل <i class="fas fa-chevron-down"></i></button>
+                            <div class="step-details">
+                                <ul>
+                                    <li>✓ تثبيت Kali Linux أو Ubuntu</li>
+                                    <li>✓ هيكلية نظام الملفات في لينكس</li>
+                                    <li>✓ الأوامر الأساسية: ls, cd, grep, chmod</li>
+                                    <li>✓ إدارة المستخدمين والصلاحيات</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- More steps will be added dynamically via JS -->
+                    <div class="roadmap-load-more">
+                        <button class="btn-secondary" id="loadMoreBeginner">
+                            عرض المزيد من الخطوات <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Intermediate & Professional roadmaps will follow same structure -->
+            <div id="intermediate-roadmap" class="roadmap-content">
+                <div class="roadmap-header">
+                    <h3>🔥 خريطة المتوسط: التعمق في التقنيات</h3>
+                    <p>35 خطوة تعليمية • مختبرات عملية • أدوات متقدمة</p>
+                </div>
+                <div class="roadmap-steps">
+                    <!-- Content loaded via JS -->
+                    <div class="loading-steps">جاري تحميل خطوات المسار المتوسط...</div>
+                </div>
+            </div>
+            
+            <div id="professional-roadmap" class="roadmap-content">
+                <div class="roadmap-header">
+                    <h3>👑 خريطة المحترف: الإتقان والتميز</h3>
+                    <p>40 خطوة تعليمية • مشاريع حقيقية • شهادات معتمدة</p>
+                </div>
+                <div class="roadmap-steps">
+                    <!-- Content loaded via JS -->
+                    <div class="loading-steps">جاري تحميل خطوات المسار الاحترافي...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📚 Resources Library Section -->
+    <section id="resources" class="resources-section">
+        <div class="section-header">
+            <h2 class="section-title">📚 مكتبة المصادر الموثوقة</h2>
+            <p class="section-subtitle">مجموعة ضخمة من المصادر التعليمية المصنفة والمحدثة باستمرار</p>
+        </div>
+        
+        <div class="resources-filters">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="youtube">YouTube</button>
+            <button class="filter-btn" data-filter="courses">دورات</button>
+            <button class="filter-btn" data-filter="tools">أدوات</button>
+            <button class="filter-btn" data-filter="books">كتب</button>
+            <button class="filter-btn" data-filter="labs">مختبرات</button>
+        </div>
+        
+        <div class="resources-search">
+            <input type="text" id="resourceSearch" placeholder="ابحث عن مصدر تعليمي...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="resources-grid" id="resourcesGrid">
+            <!-- Resources will be loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- 👥 Community Section -->
+    <section id="community" class="community-section">
+        <div class="section-header">
+            <h2 class="section-title">👥 مجتمع RAVEN</h2>
+            <p class="section-subtitle">انضم لمجتمع المتعلمين وشارك رحلتك التعليمية</p>
+        </div>
+        
+        <div class="community-grid">
+            <div class="community-card">
+                <i class="fab fa-discord"></i>
+                <h3>خادم ديسكورد</h3>
+                <p>غرف نقاش، مساعدة فورية، مشاريع جماعية، وتحديات أسبوعية</p>
+                <a href="#" class="btn-community">انضم الآن</a>
+            </div>
+            <!-- Telegram Card -->
+<div class="community-card">
+    <i class="fab fa-telegram"></i>
+    <h3>قناة تيليجرام</h3>
+    <p>تحديثات يومية، مصادر حصرية، ونصائح سريعة في مجال الأمن السيبراني</p>
+    <a href="https://t.me/ravenacademy" target="_blank" class="btn-community">
+        <i class="fab fa-telegram"></i> اشترك الآن
+    </a>
+</div>
+            
+            <div class="community-card">
+                <i class="fab fa-github"></i>
+                <h3>مستودع GitHub</h3>
+                <p>أكواد مشاريع، أدوات مفتوحة المصدر، ومساهمات المجتمع</p>
+                <a href="#" class="btn-community">استكشف الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📬 Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title">📬 تواصل معنا</h2>
+            <p class="section-subtitle">لديك سؤال؟ اقتراح؟ أو تريد المساهمة؟ نحن هنا للاستماع</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>hackerraven5@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h4>إنستغرام</h4>
+                        <a href="https://instagram.com/hacker_.raven" target="_blank">@hacker_.raven</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-tiktok"></i>
+                    <div>
+                        <h4>تيك توك</h4>
+                        <a href="https://tiktok.com/@hacker_.raven" target="_blank">@hacker_.raven</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>سياسة الخصوصية</h4>
+                        <p>جميع بياناتك محمية ومشفرة وفقاً لأعلى معايير الأمان</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">الموضوع</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">اختر الموضوع</option>
+                        <option value="question">سؤال عام</option>
+                        <option value="suggestion">اقتراح تحسين</option>
+                        <option value="contribution">المساهمة بالمحتوى</option>
+                        <option value="report">الإبلاغ عن مشكلة</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 🔒 Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-crow"></i>
+                    <span>RAVEN</span>
+                </div>
+                <p>منصة تعليمية عربية رائدة في مجال الأمن السيبراني والاختراق الأخلاقي</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/hacker_.raven" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@hacker_.raven" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#levels">مسارات التعلم</a></li>
+                    <li><a href="#roadmap">الخرائط التعليمية</a></li>
+                    <li><a href="#resources">مكتبة المصادر</a></li>
+                    <li><a href="#community">المجتمع</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>المستويات</h4>
+                <ul>
+                    <li><a href="pages/beginner.html">🌱 مبتدئ</a></li>
+                    <li><a href="pages/intermediate.html">🔥 متوسط</a></li>
+                    <li><a href="pages/professional.html">👑 محترف</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>معلومات</h4>
+                <ul>
+                    <li><a href="#">عن RAVEN</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="#">شروط الاستخدام</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                    <li><a href="#">دليل الاستخدام</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 <strong>RAVEN Academy</strong>. جميع الحقوق محفوظة لـ 
+                <a href="https://instagram.com/hacker_.raven" target="_blank">hacker_.raven</a>
+            </p>
+            <p class="disclaimer">
+                ⚠️ جميع المحتويات التعليمية مخصصة للأغراض التعليمية والاختراق الأخلاقي فقط. 
+                أي استخدام غير أخلاقي أو غير قانوني هو مسؤولية المستخدم الشخصية.
+            </p>
+        </div>
+    </footer>
+
+    <!-- 🔧 Back to Top Button -->
+    <button id="backToTop" title="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 📱 Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/resources.js"></script>
+    <script src="js/roadmap.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
