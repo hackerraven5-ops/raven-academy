@@ -1,0 +1,150 @@
+/* ========================================
+   RAVEN Academy - Responsive Styles
+   © 2026 hacker_.raven
+   ======================================== */
+
+/* 📱 Tablet Styles (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text .hero-buttons,
+    .hero-text .social-links {
+        justify-content: center;
+    }
+    
+    .levels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* 🖥️ Desktop Optimizations (1024px+) */
+@media (min-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+    
+    .terminal-window {
+        max-width: 450px;
+    }
+    
+    .levels-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+/* 🖥️ Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+    .container {
+        padding: 0 3rem;
+    }
+    
+    .hero-content {
+        gap: 4rem;
+    }
+    
+    .roadmap-steps::before {
+        right: calc(50% - 650px);
+    }
+}
+
+/* 🌙 Dark/Light Theme Specific Adjustments */
+.light-theme .hero-bg .matrix-rain {
+    opacity: 0.3;
+}
+
+.light-theme .terminal-window {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+.light-theme .level-card {
+    background: #ffffff;
+}
+
+/* 🎨 High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo i,
+    .level-icon,
+    .social-btn i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* 🎮 Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn, 
+    .tab-btn,
+    .filter-btn,
+    .step-toggle {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .resource-link,
+    .nav-menu a {
+        padding: 0.75rem 1rem;
+    }
+    
+    /* Disable hover effects on touch */
+    .level-card:hover,
+    .resource-card:hover,
+    .community-card:hover {
+        transform: none !important;
+    }
+}
+
+/* 🔄 Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .terminal-window {
+        max-height: 200px;
+    }
+}
+
+/* 📺 TV / Large Screen */
+@media (min-width: 1920px) {
+    html {
+        font-size: 18px;
+    }
+    
+    .container {
+        max-width: 1600px;
+    }
+}
